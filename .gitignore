@@ -1,0 +1,20 @@
+# 依赖与系统文件
+node_modules/
+.DS_Store
+*.log
+
+package-lock.json
+
+.vscode
+.idea
+
+# 本地凭据（.env.example 是模板，需要提交）
+.env
+.env.*
+!.env.example
+
+# Agent 本地记忆（含库结构 / 审计细节，不随仓库公开）
+.agent/
+
+
+# 测试

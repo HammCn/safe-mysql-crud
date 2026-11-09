@@ -1,0 +1,36 @@
+{
+  "name": "safe-mysql-crud",
+  "version": "1.0.0",
+  "description": "默认安全的极简 MySQL CRUD 辅助库：强制参数化、默认禁用裸 SQL、标识符白名单、错误与日志脱敏。",
+  "type": "module",
+  "main": "./sql.js",
+  "exports": {
+    ".": "./sql.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "sql.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test sql.test.js"
+  },
+  "keywords": [
+    "mysql",
+    "mysql2",
+    "crud",
+    "sql-injection",
+    "parameterized-query",
+    "prepared-statement",
+    "security"
+  ],
+  "author": "Hamm.cn",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "mysql2": "^3.24.6"
+  }
+}
